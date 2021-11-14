@@ -1,0 +1,95 @@
+<html>
+<title>Past Projects</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: Comfortaa; }
+
+
+
+.zoom {
+  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+</style>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-xxlarge w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="./index.html" class="w3-bar-item w3-button w3-padding-large" style="font-size:30px;">Home</a>
+      <a href="./index.html#services" class="w3-bar-item w3-button w3-padding-large w3-hide-small" style="font-size:30px;">Services</a>
+      <a href="./index.html#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small" style="font-size:30px;">About</a>
+      <a href="./index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small" style="font-size:30px;">Contact</a>
+
+    </div>
+  </div>
+
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="./index.html#services" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" style="font-size:30px;">Services</a>
+    <a href="./index.html#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" style="font-size:30px;">About</a>
+    <a href="./index.html#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" style="font-size:30px;">Contact</a>
+
+  </div>
+
+  <div class="w3-container" style="padding:128px 16px">
+    <h3 class="w3-center w3-xxlarge w3-hide-small"><b><a style="color:#f1c232">——— </a>PAST PROJECTS <a style="color:#f1c232"> ———</a></b></h3>
+    <h3 class="w3-center w3-xlarge w3-hide-large w3-hide-medium"><b><a style="color:#f1c232">— </a>PAST PROJECTS <a style="color:#f1c232"> —</a></b></h3>
+
+  </div>
+
+
+  <div class="w3-row w3-border w3-center">
+    <h1>Exterior House Painting</h1>
+    <h3>Finished: October 25, 2021</h3>
+    <hr style="border-top: 2px solid #f1c232">
+    <div class="w3-third w3-container">
+      <h2>Before</h2>
+      <img src="./images/projects/p1_before.jpg" class="zoom w3-hide-small" style="height: 300px;width:300px;">
+      <img src="./images/projects/p1_before.jpg" class=" w3-hide-medium w3-hide-large" style="height: 300px;width:300px;">
+
+      <br>
+      <br>
+    </div>
+    <div class="w3-third w3-container">
+      <h2>After</h2>
+      <img src="./images/projects/p1_after.jpg" class="zoom w3-hide-small" style="height: 300px;width:300px;">
+      <img src="./images/projects/p1_after.jpg" class=" w3-hide-medium w3-hide-large" style="height: 300px;width:300px;">
+
+      <br>
+      <br>
+    </div>
+    <div class="w3-third w3-container">
+      <h2>Description</h2>
+      <p style="font-size:17px;">We started the project by powerwashing the entirty of the house. We then prepared the house for painting by caulking the cracks and covering the windows.</p>
+
+    </div>
+  </div>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
+
+</body>
+
+</html>
